@@ -62,9 +62,12 @@
     text-indent: 1rem;
   }
 
-
   .p_p {
       margin-bottom: 50px;
       /* max-height: 300px; */
       overflow: hidden;
+  }
+  .row{
+    padding-left: 10%;
+
   }
