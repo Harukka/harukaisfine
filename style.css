@@ -67,7 +67,14 @@
       /* max-height: 300px; */
       overflow: hidden;
   }
-  .row{
+  .index-row{
     padding-left: 10%;
 
   }
+  .p-images{
+    padding-top: 10%;
+    margin: 10%;
+  }
+  /* .images-container{
+    margin-top: 100 px;
+  } */
