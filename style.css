@@ -28,6 +28,9 @@
       -webkit-flex-direction: column;
       flex-direction: column;
     }
+    .container { 
+      width: 590px; 
+      } 
   }
 
   .navbar .nav-link{
@@ -43,6 +46,9 @@
       color: var(--dark);
       padding-top: 100px ;
   }
+  .hero {
+    min-height: 100vh;
+}
   
   h1,
   h2,
@@ -71,10 +77,12 @@
     padding-left: 10%;
 
   }
-  .p-images{
-    padding-top: 10%;
-    margin: 10%;
+  .images-container{
+    padding-top: 50vh;
+    padding-bottom: 10vh;
+
   }
-  /* .images-container{
-    margin-top: 100 px;
-  } */
+  .p-images{
+    padding: 5%;
+
+  }
