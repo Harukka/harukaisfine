@@ -1,8 +1,5 @@
 :root{
     --white: #FFFFFF;
-    --jellybeanBlue :#388592;
-    --MacaroniAndCheese :#F7B487;
-    --AntiqueBrass:#D49580;
     --purple:#4f2660;
     --lime: #b5da62;
     --dark:#000000;
@@ -59,11 +56,6 @@ a{
   text-indent: 1rem;
 }
 
-.p_p {
-    margin-bottom: 50px;
-    /* max-height: 300px; */
-    overflow: hidden;
-}
 .index-row{
   padding-left: 10%;
 
