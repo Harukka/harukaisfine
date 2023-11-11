@@ -61,7 +61,7 @@ a{
 
 }
 .indent.line{
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   position: relative;
 }
 .indent.line::before {
