@@ -1,21 +1,170 @@
 .circle {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    background-color: #e0e0e0;
+    background-color: #f8f9fa;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
+
+.circle:hover {
+    transform: scale(1.05);
+}
+
 .circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
+
 .card {
     height: 150px;
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #34495e;
+}
+
+.social-links a {
+    color: #2c3e50;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+/* セクション共通 */
+.section {
+    padding: 60px 0 40px 0;
+    margin-bottom: 0;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.section-divider {
+    width: 60px;
+    height: 3px;
+    background: #3498db;
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+.section-bg {
+    background: #f8f9fa;
+}
+
+/* Heroセクション */
+.hero-section {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/* Works画像 */
+.works-img {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 220px;
+    object-fit: cover;
+}
+
+/* SNSアイコン */
+.social-links a {
+    color: #2c3e50;
+    font-size: 28px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: #3498db;
+}
+
+/* About, Experienceリスト中央寄せ */
+.text-center ul {
+    display: inline-block;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 0 20px 0;
+    }
+    .hero-section {
+        padding-top: 40px;
+    }
+    .works-img {
+        max-width: 100%;
+    }
+}
+
+/* Notion風カード */
+.notion-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 16px;
+    transition: box-shadow 0.2s;
+}
+.notion-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* カード内のテキスト調整 */
+.notion-card .fw-bold {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.notion-card .small {
+    font-size: 0.95em;
+}
+
+/* カードの間隔調整 */
+.row.g-3 > [class^='col-'] {
+    margin-bottom: 0;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+    .notion-card {
+        margin-bottom: 20px;
+    }
+    .row.g-3 > [class^='col-'] {
+        margin-bottom: 20px;
+    }
 }

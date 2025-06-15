@@ -54,90 +54,140 @@
 </head>
 <body>
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <form class="container-fluid justify-content-start">
-            <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-            <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-        </form>
-    </nav>    
-    <div class="container">
-        <div class="row justify-content-center mt-5">
-            <div class="col-auto">
-                <div class="circle">
-                    <img src="profile.JPG" alt="Icon" class="img-fluid">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Haruka</a>
+            <div class="d-flex">
+                <button id="lang-jp" class="btn btn-outline-light me-2">日本語</button>
+                <button id="lang-en" class="btn btn-outline-light">English</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <!-- Profile Card -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-md-10">
+                <div class="notion-card p-4 mb-3 text-center">
+                    <div class="circle mb-3 mx-auto" style="width:100px;height:100px;">
+                        <img src="profile.JPG" alt="Icon" class="img-fluid">
+                    </div>
+                    <h2>Haruka</h2>
+                    <p class="mb-1"><span class="lang-jp">モデル・エンジニア・茶道講師・デザイナー</span><span class="lang-en" style="display:none;">Model / Engineer / Tea Ceremony Instructor / Designer</span></p>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center mt-3">
-            <div class="col-auto text-center">
-                <h2>Pippi Haruka</h2>
-                <p>Fashion Model / Frontend Engineer</p>
-                <h6>横浜生まれ三浦育ちのファッションモデル・エンジニア。<br>
-                    ファッションモデルとしてミラノ・東京で働きながらITの世界へ。<br>
-                    Webサイトの作成、運用、テクニカルサポート、DX化(Kintone)など<br>幅広く経験してきました。</h6>
-            </div>
-        </div>
-
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">IT skills - Language</h5>
-                        <p class="card-text">JavaScript - 3年<br>Html - 3年<br>CSS - 3年</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">IT skills - OS</h5>
-                        <p class="card-text">Windows - 4年<br>Mac - 2年</p>Linux - 6か月
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Skills - others</h5>
-                        <p class="card-text">Adobe illustrator <br>茶道裏千家 専任講師<br></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                            <h5 class="card-title">Project</h5>
-                                <p class="card-text"><a href="https://audiogram.jp/" class="card-link" target="_blank">Audiogram.jp</a> <br>- オージオグラム描画アプリ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                            <h5 class="card-title">Links</h5>
-                            <p class="card-text"><a href="https://fridayfarm.net/pippi/" class="card-link" target="_blank">Model</a> - based in Tokyo</p>    
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-3">
-                <a href="https://example.com/link3" class="card-link" target="_blank">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">SNS</h5>
-                            <p class="card-text">Short description of Project 1.</p>
+        <!-- Skills & Strengths Cards -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-md-10">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="notion-card h-100 p-3 text-center">
+                            <div class="mb-2">🧑‍🎤 <b><span class="lang-jp">モデル</span><span class="lang-en" style="display:none;">Model</span></b></div>
+                            <div><span class="lang-jp">ミラノ・東京で活動／ファッション誌・広告出演</span><span class="lang-en" style="display:none;">Model in Milan & Tokyo / Magazines & Ads</span></div>
                         </div>
                     </div>
-                </a>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="notion-card h-100 p-3 text-center">
+                            <div class="mb-2">💻 <b><span class="lang-jp">エンジニア</span><span class="lang-en" style="display:none;">Engineer</span></b></div>
+                            <div><span class="lang-jp">自動化・DX／Web・モバイル開発／PMO</span><span class="lang-en" style="display:none;">Automation, DX, Web/Mobile Dev, PMO</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="notion-card h-100 p-3 text-center">
+                            <div class="mb-2">🍵 <b><span class="lang-jp">茶道講師</span><span class="lang-en" style="display:none;">Tea Ceremony</span></b></div>
+                            <div><span class="lang-jp">裏千家 専任講師／茶道イベント主催</span><span class="lang-en" style="display:none;">Urasenke Tea Ceremony Instructor</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="notion-card h-100 p-3 text-center">
+                            <div class="mb-2">🎨 <b><span class="lang-jp">イラスト・デザイン</span><span class="lang-en" style="display:none;">Illustrator</span></b></div>
+                            <div><span class="lang-jp">シンプルなデザイン制作が可能です</span><span class="lang-en" style="display:none;">Can create simple designs</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        <!-- Footer with Instagram link -->
-        <footer class="footer mt-5">
-            <div class="container">
-                <i  class="far fa-laugh"></i>
+        </div>
+        <!-- Model Works Card -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-md-10">
+                <div class="notion-card p-4 text-center">
+                    <div class="mb-2 fw-bold"><span class="lang-jp">Model</span><span class="lang-en" style="display:none;">Model Works</span></div>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mb-2">
+                        <img src="image/Portfolio/p2.jpg" class="works-img" alt="work1">
+                        <img src="image/Portfolio/p8.jpeg" class="works-img" alt="work2">
+                        <img src="image/Portfolio/p11.jpeg" class="works-img" alt="work3">
+                    </div>
+                    <a href="https://www.instagram.com/goooonpippi" target="_blank" class="btn btn-outline-dark btn-sm"><span class="lang-jp">Instagramを見る</span><span class="lang-en" style="display:none;">See Instagram</span></a>
+                </div>
             </div>
-        </footer>
-
+        </div>
+        <!-- Engineer Experience Card -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-md-10">
+                <div class="notion-card p-4 text-center">
+                    <div class="mb-2 fw-bold"><span class="lang-jp">Engineer</span><span class="lang-en" style="display:none;">Engineer Experience</span></div>
+                    <ul class="list-unstyled d-inline-block text-start mb-0 lang-jp">
+                        <li>・業務システムの自動化・DX推進</li>
+                        <li>・Web/モバイルアプリの開発・運用</li>
+                        <li>・PMO/チームメンバーとしての参画</li>
+                    </ul>
+                    <ul class="list-unstyled d-inline-block text-start mb-0 lang-en" style="display:none;">
+                        <li>- Automation & DX for business systems</li>
+                        <li>- Web/Mobile app development & operation</li>
+                        <li>- PMO/Team member experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Engineer Skills Card -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-md-10">
+                <div class="notion-card p-4 text-center">
+                    <div class="mb-2 fw-bold"><span class="lang-jp">Engineer Skills</span><span class="lang-en" style="display:none;">Engineer Skills</span></div>
+                    <ul class="list-unstyled mb-0 lang-jp">
+                        <li><b>言語：</b>JavaScript（3年）、Python（1年）、PowerShell（1年）</li>
+                        <li><b>フレームワーク：</b>React、Node.js、Bootstrap</li>
+                        <li><b>クラウド：</b>AWS、GCP</li>
+                        <li><b>ツール：</b>GitHub、Kintone、Ansible、WordPress、Illustrator</li>
+                        <li><b>その他：</b>HTML/CSS、SQL、Linux/Windows</li>
+                    </ul>
+                    <ul class="list-unstyled mb-0 lang-en" style="display:none;">
+                        <li><b>Languages:</b> JavaScript (3 yrs), Python (1 yr), PowerShell (1 yr)</li>
+                        <li><b>Frameworks:</b> React, Node.js, Bootstrap</li>
+                        <li><b>Cloud:</b> AWS, GCP</li>
+                        <li><b>Tools:</b> GitHub, Kintone, Ansible, WordPress, Illustrator</li>
+                        <li><b>Others:</b> HTML/CSS, SQL, Linux/Windows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- SNS/Contact Card -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10">
+                <div class="notion-card p-4 text-center">
+                    <div class="mb-2 fw-bold">Contact</div>
+                    <div class="social-links mb-2">
+                        <a href="https://www.instagram.com/goooonpippi" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/goooonza" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/haruka-sugano-330177296/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <span class="text-muted small"><span class="lang-jp">お気軽にご連絡ください</span><span class="lang-en" style="display:none;">Feel free to contact me!</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 言語切替
+        document.getElementById('lang-jp').onclick = function() {
+            document.querySelectorAll('.lang-jp').forEach(function(el){el.style.display='';});
+            document.querySelectorAll('.lang-en').forEach(function(el){el.style.display='none';});
+        };
+        document.getElementById('lang-en').onclick = function() {
+            document.querySelectorAll('.lang-jp').forEach(function(el){el.style.display='none';});
+            document.querySelectorAll('.lang-en').forEach(function(el){el.style.display='';});
+        };
+    </script>
     <!-- Font Awesome JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
